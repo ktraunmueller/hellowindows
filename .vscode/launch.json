@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:hellowindows}",
+            "name": "Debug hellowindows",
+            "program": "${workspaceFolder:hellowindows}/.build/debug/hellowindows",
+            "preLaunchTask": "swift: Build Debug hellowindows"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:hellowindows}",
+            "name": "Release hellowindows",
+            "program": "${workspaceFolder:hellowindows}/.build/release/hellowindows",
+            "preLaunchTask": "swift: Build Release hellowindows"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "swift",
+			"args": [
+				"build",
+				"--product",
+				"hellowindows",
+				"-Xlinker",
+				"-debug:dwarf",
+				"-Xswiftc",
+				"-diagnostic-style=llvm"
+			],
+			"env": {},
+			"cwd": "c:\\Users\\karl\\sandbox\\compositorapp\\hellowindows",
+			"disableTaskQueue": true,
+			"dontTriggerTestDiscovery": true,
+			"showBuildStatus": "swiftStatus",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "swift: Build Debug hellowindows",
+			"detail": "swift build --product hellowindows -Xlinker -debug:dwarf -Xswiftc -diagnostic-style=llvm"
+		}
+	]
+}
