@@ -1,22 +1,26 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
         {
             "type": "swift-lldb",
             "request": "launch",
+            "name": "Debug DemoApp",
+            "program": "${workspaceFolder:hellowindows}/.build/debug/DemoApp",
             "args": [],
             "cwd": "${workspaceFolder:hellowindows}",
-            "name": "Debug hellowindows",
-            "program": "${workspaceFolder:hellowindows}/.build/debug/hellowindows",
-            "preLaunchTask": "swift: Build Debug hellowindows"
+            "preLaunchTask": "swift: Build Debug DemoApp"
         },
         {
             "type": "swift-lldb",
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:hellowindows}",
-            "name": "Release hellowindows",
-            "program": "${workspaceFolder:hellowindows}/.build/release/hellowindows",
-            "preLaunchTask": "swift: Build Release hellowindows"
+            "name": "Release DemoApp",
+            "program": "${workspaceFolder:hellowindows}/.build/release/DemoApp",
+            "preLaunchTask": "swift: Build Release DemoApp"
         }
     ]
 }

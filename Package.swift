@@ -13,32 +13,24 @@ let GUILinkerSettings: [LinkerSetting] = [
 let package = Package(
     name: "hellowindows",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .executable(
-            name: "hellowindows",
-            targets: ["hellowindows"]),
+            name: "DemoApp",
+            targets: ["DemoApp"]),
     ],
     dependencies: [
-        .package(path: "../UWP"),
         .package(path: "../WinAppSDK"),
         .package(path: "../WindowsFoundation"),
         .package(path: "../WinUI")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "hellowindows",
+            name: "DemoApp",
             dependencies: [
-                .product(name: "UWP", package: "UWP"),
                 .product(name: "WinAppSDK", package: "WinAppSDK"),
                 .product(name: "WindowsFoundation", package: "WindowsFoundation"),
                 .product(name: "WinUI", package: "WinUI")
             ],
-            linkerSettings: GUILinkerSettings),
-        .testTarget(
-            name: "hellowindowsTests",
-            dependencies: ["hellowindows"]
-        ),
-    ]
+            linkerSettings: GUILinkerSettings)
+    ],
+    swiftLanguageModes: [.v5]
 )

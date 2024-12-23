@@ -5,7 +5,7 @@ import WindowsFoundation
 import WinUI
 
 @main
-public class PreviewApp: SwiftApplication {
+public class DemoApp: SwiftApplication {
     /// A required initializer for the application. Non-UI setup for your application can be done here.
     /// Subscribing to unhandledException is a good place to handle any unhandled exceptions that may occur
     /// in your application.
@@ -24,7 +24,7 @@ public class PreviewApp: SwiftApplication {
     /// application and when you can create a window and display UI.s
     override public func onLaunched(_ args: WinUI.LaunchActivatedEventArgs) {
         let window = Window()
-        window.title = "WinUI3AnimationsPreview"
+        window.title = "Demo App"
 
         try! window.activate()
 

@@ -6,24 +6,23 @@
 			"args": [
 				"build",
 				"--product",
-				"hellowindows",
+				"DemoApp",
 				"-Xlinker",
 				"-debug:dwarf",
 				"-Xswiftc",
 				"-diagnostic-style=llvm"
 			],
-			"env": {},
+			"env": {
+				"DEVELOPER_DIR": "public"
+			},
 			"cwd": "c:\\Users\\karl\\sandbox\\compositorapp\\hellowindows",
 			"disableTaskQueue": true,
 			"dontTriggerTestDiscovery": true,
 			"showBuildStatus": "swiftStatus",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"problemMatcher": [],
-			"label": "swift: Build Debug hellowindows",
-			"detail": "swift build --product hellowindows -Xlinker -debug:dwarf -Xswiftc -diagnostic-style=llvm"
+			"label": "swift: Build Debug DemoApp",
+			"detail": "swift build --product DemoApp -Xlinker -debug:dwarf -Xswiftc -diagnostic-style=llvm"
 		}
 	]
 }
