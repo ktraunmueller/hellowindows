@@ -27,6 +27,7 @@ let package = Package(
         .executableTarget(
             name: "DemoApp",
             dependencies: [
+                .product(name: "UWP", package: "swift-uwp"),
                 .product(name: "WinAppSDK", package: "swift-windowsappsdk"),
                 .product(name: "WindowsFoundation", package: "swift-windowsfoundation"),
                 .product(name: "WinUI", package: "swift-winui")
