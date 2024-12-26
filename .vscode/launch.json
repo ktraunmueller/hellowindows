@@ -16,10 +16,10 @@
         {
             "type": "swift-lldb",
             "request": "launch",
-            "args": [],
-            "cwd": "${workspaceFolder:hellowindows}",
             "name": "Release DemoApp",
             "program": "${workspaceFolder:hellowindows}/.build/release/DemoApp",
+            "args": [],
+            "cwd": "${workspaceFolder:hellowindows}",
             "preLaunchTask": "swift: Build Release DemoApp"
         }
     ]

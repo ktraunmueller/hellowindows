@@ -18,17 +18,17 @@ let package = Package(
             targets: ["DemoApp"]),
     ],
     dependencies: [
-        .package(path: "../WinAppSDK"),
-        .package(path: "../WindowsFoundation"),
-        .package(path: "../WinUI")
+        .package(path: "../swift-windowsappsdk"),
+        .package(path: "../swift-windowsfoundation"),
+        .package(path: "../swift-winui")
     ],
     targets: [
         .executableTarget(
             name: "DemoApp",
             dependencies: [
-                .product(name: "WinAppSDK", package: "WinAppSDK"),
-                .product(name: "WindowsFoundation", package: "WindowsFoundation"),
-                .product(name: "WinUI", package: "WinUI")
+                .product(name: "WinAppSDK", package: "swift-windowsappsdk"),
+                .product(name: "WindowsFoundation", package: "swift-windowsfoundation"),
+                .product(name: "WinUI", package: "swift-winui")
             ],
             linkerSettings: GUILinkerSettings)
     ],
