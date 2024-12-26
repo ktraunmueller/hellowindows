@@ -18,9 +18,10 @@ let package = Package(
             targets: ["DemoApp"]),
     ],
     dependencies: [
-        .package(path: "../swift-windowsappsdk"),
-        .package(path: "../swift-windowsfoundation"),
-        .package(path: "../swift-winui")
+        .package(url: "https://github.com/ktraunmueller/swift-uwp", branch: "main"),
+        .package(url: "https://github.com/ktraunmueller/swift-windowsappsdk", branch: "main"),
+        .package(url: "https://github.com/ktraunmueller/swift-windowsfoundation", branch: "main"),
+        .package(url: "https://github.com/ktraunmueller/swift-winui", branch: "main")
     ],
     targets: [
         .executableTarget(
